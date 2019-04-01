@@ -1,0 +1,52 @@
+.animate-to {
+  &-profile {
+    .profile-photo.profile-0 {
+      transform: translate3d(0, 0, 0) scale(1) !important;
+    }
+
+    .profile-photo-secondary.profile-1,
+    .profile-photo-secondary.profile-2,
+    .profile-photo-secondary.profile-3 {
+      opacity: 0;
+    }
+    .profile-name {
+      transform: translateZ(0);
+      color: #333;
+    }
+    button.follow {
+      transform: translateZ(0);
+    }
+  }
+
+  &-place {
+    .profile-photo.profile-0 {
+      transform: translate3d(-20px,-100px,0) scale(.75) !important;
+    }
+    .profile-photo-secondary.profile-1,
+    .profile-photo-secondary.profile-2,
+    .profile-photo-secondary.profile-3 {
+      opacity: 0;
+    }
+
+    .profile-name {
+      transform: translate3d(140px,-125px,0) scale(.75);
+      color: #fff;
+    }
+    button.follow {
+      transform: translate3d(-215px,-80px,0);
+    }
+  }
+
+  &-group {
+    .profile-photo.profile-0 {
+      transform: translate3d(-70px,-70px,0) scale(.25) !important;
+    }
+    .profile-name {
+      transform: translate3d(0px, -125px, 0);
+    }
+    button.follow {
+      opacity: 0;
+      transform: none;
+    }
+  }
+}

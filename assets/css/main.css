@@ -514,19 +514,64 @@ nav {
           transform: translate3d(0, 0, 0) scale(1);
 }
 
-.profile-photo.profile-0.profile {
+.animate-to-profile .profile-photo.profile-0 {
   -webkit-transform: translate3d(0, 0, 0) scale(1) !important;
           transform: translate3d(0, 0, 0) scale(1) !important;
 }
 
-.profile-photo.profile-0.place {
-  -webkit-transform: translate3d(-20px, -100px, 0) scale(0.75);
-          transform: translate3d(-20px, -100px, 0) scale(0.75);
+.animate-to-profile .profile-photo-secondary.profile-1,
+.animate-to-profile .profile-photo-secondary.profile-2,
+.animate-to-profile .profile-photo-secondary.profile-3 {
+  opacity: 0;
 }
 
-.profile-photo.profile-0.group {
-  -webkit-transform: translate3d(-70px, -70px, 0) scale(0.25);
-          transform: translate3d(-70px, -70px, 0) scale(0.25);
+.animate-to-profile .profile-name {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  color: #333;
+}
+
+.animate-to-profile button.follow {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.animate-to-place .profile-photo.profile-0 {
+  -webkit-transform: translate3d(-20px, -100px, 0) scale(0.75) !important;
+          transform: translate3d(-20px, -100px, 0) scale(0.75) !important;
+}
+
+.animate-to-place .profile-photo-secondary.profile-1,
+.animate-to-place .profile-photo-secondary.profile-2,
+.animate-to-place .profile-photo-secondary.profile-3 {
+  opacity: 0;
+}
+
+.animate-to-place .profile-name {
+  -webkit-transform: translate3d(140px, -125px, 0) scale(0.75);
+          transform: translate3d(140px, -125px, 0) scale(0.75);
+  color: #fff;
+}
+
+.animate-to-place button.follow {
+  -webkit-transform: translate3d(-215px, -80px, 0);
+          transform: translate3d(-215px, -80px, 0);
+}
+
+.animate-to-group .profile-photo.profile-0 {
+  -webkit-transform: translate3d(-70px, -70px, 0) scale(0.25) !important;
+          transform: translate3d(-70px, -70px, 0) scale(0.25) !important;
+}
+
+.animate-to-group .profile-name {
+  -webkit-transform: translate3d(0px, -125px, 0);
+          transform: translate3d(0px, -125px, 0);
+}
+
+.animate-to-group button.follow {
+  opacity: 0;
+  -webkit-transform: none;
+          transform: none;
 }
 
 @media screen and (max-width: 600px) {

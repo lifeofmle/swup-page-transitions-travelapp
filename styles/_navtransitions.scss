@@ -187,20 +187,6 @@
   }
 }
 
-.profile-photo.profile-0.profile {
-  transform: translate3d(0, 0, 0) scale(1) !important;
-}
-
-.profile-photo.profile-0.place {
-  transform: translate3d(-20px,-100px,0) scale(.75) !important;
-}
-
-.profile-photo.profile-0.group {
-  transform: translate3d(-70px,-70px,0) scale(.25) !important;
-}
-
-
-
 //make the icon aligned with the avatars that are similar on mobile
 @media screen and (max-width: 600px) {
   .group,
