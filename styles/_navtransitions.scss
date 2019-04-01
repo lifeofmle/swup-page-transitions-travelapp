@@ -113,7 +113,7 @@
   right: 0;
   display: block;
   transition: 0.4s all ease-out;
-  padding: 12px 12px 9px;
+  padding: 12px 12px 6px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50% 50%;
   cursor: pointer;
@@ -187,9 +187,19 @@
   }
 }
 
-.profile .profile-photo.profile-0 {
+.profile-photo.profile-0.profile {
   transform: translate3d(0, 0, 0) scale(1) !important;
 }
+
+.profile-photo.profile-0.place {
+  transform: translate3d(-20px,-100px,0) scale(.75) !important;
+}
+
+.profile-photo.profile-0.group {
+  transform: translate3d(-70px,-70px,0) scale(.25) !important;
+}
+
+
 
 //make the icon aligned with the avatars that are similar on mobile
 @media screen and (max-width: 600px) {

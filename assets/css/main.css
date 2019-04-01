@@ -33,10 +33,6 @@ a:active {
   text-decoration: none;
 }
 
-a.active {
-  font-weight: bold;
-}
-
 button {
   margin-bottom: 10px;
   background: orangered;
@@ -430,7 +426,7 @@ nav {
   display: block;
   -webkit-transition: 0.4s all ease-out;
   transition: 0.4s all ease-out;
-  padding: 12px 12px 9px;
+  padding: 12px 12px 6px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50% 50%;
   cursor: pointer;
@@ -518,9 +514,19 @@ nav {
           transform: translate3d(0, 0, 0) scale(1);
 }
 
-.profile .profile-photo.profile-0 {
+.profile-photo.profile-0.profile {
   -webkit-transform: translate3d(0, 0, 0) scale(1) !important;
           transform: translate3d(0, 0, 0) scale(1) !important;
+}
+
+.profile-photo.profile-0.place {
+  -webkit-transform: translate3d(-20px, -100px, 0) scale(0.75);
+          transform: translate3d(-20px, -100px, 0) scale(0.75);
+}
+
+.profile-photo.profile-0.group {
+  -webkit-transform: translate3d(-70px, -70px, 0) scale(0.25);
+          transform: translate3d(-70px, -70px, 0) scale(0.25);
 }
 
 @media screen and (max-width: 600px) {
@@ -582,9 +588,16 @@ a,
 a:visited,
 a:active {
   color: white;
-  font-weight: bold;
   text-decoration: none;
   padding-left: 6px;
+}
+
+.transition-fadeInUp {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .transition-fade {
@@ -596,7 +609,15 @@ a:active {
 html.is-animating .transition-fade {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  opacity: 0.5;
+}
+
+html.is-animating .transition-fadeInUp {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
 }
 
 main.profile {
